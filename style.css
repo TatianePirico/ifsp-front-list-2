@@ -1,0 +1,17 @@
+.container {
+	padding: 20px 80px;
+}
+
+.section--column{
+	display: flex;
+  flex-direction: column;
+}
+
+.section--row{
+	display: flex;
+	flex-direction: row;
+}
+
+.margin--bottom{
+	margin-bottom: 10px;
+}
