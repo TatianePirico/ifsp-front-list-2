@@ -27,7 +27,7 @@
         <section id="meus-dados">
             <h2>Meus dados</h2>
             <form action="#"> 
-                <fieldset class="section--column margin--bottom">
+                <fieldset class="section section--column margin--bottom">
                     <legend>Dados da conta</legend>
                     <label for="email">Email</label>
                     <input class="margin--bottom" placeholder="Ex: seuemail@gmail.com" type="email" name="email" required/>
@@ -38,7 +38,7 @@
                     <label for="password">Senha</label>
                     <input class="margin--bottom" placeholder="Use uma senha forte" type="password" required/>
                 </fieldset>
-                <fieldset  class="section--column margin--bottom">
+                <fieldset  class="section section--column margin--bottom">
                     <legend>Dados pessoais</legend>
                     <label for="name" required>Nome completo</label>
                     <input class="margin--bottom" placeholder="Ex: João da Silva" type="name" name="name"/>
@@ -49,7 +49,64 @@
             </form>
         </section>
         <section id="minhas-compras">
-            Deu certo
+            <h2>Meus dados</h2>
+            <div class="section section--row section--space border margin--bottom">
+                <div class="section section--column">
+                    <p>Número do pedido</p>
+                    <p>#37945982</p>
+                </div>
+                <div class="section section--column">
+                    <p>Status</p>
+                    <p>Concluído</p>
+                </div>
+                <div class="section section--column">
+                    <p>Data</p>
+                    <p>12/12/2020</p>
+                </div>
+                <div class="section section--column">
+                    <p>Forma de pagamento</p>
+                    <p>Cartão de crédito</p>
+                </div>
+                <div class="section section--column">
+                    <p>Acompanhamento</p>
+                    <button type="button">Rastreio detalhado</button>
+                </div>
+            </div>
+            <div class="section section--row section--space border margin--bottom">
+                <figure>
+                    <img width="100" height="70" src="./img/100x70.png" alt="Imagem do produto - Suporte articulado para monitor e notebook">
+                </figure>
+                <div class="section section--column">
+                    <strong>Suporte Articuladopara Monitor e Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500</strong>
+                    <p>Quantidade: 1</p>
+                    <a href="#">Avaliar produto</a>
+                </div>
+                <p>R$ 99,00</p>
+            </div>
+            <details open>
+                <summary>Detalhes do pagamento e envio</summary>
+                <div class="section section--row section--space">
+                    <div>
+                        <strong>Endereço de entrega</strong>
+                        <p>Avenida Estelita Falcão</p>
+                        <p>Número 12, Centro</p>
+                        <p>CEP 48.170-970 - Agua Fria/BA</p>
+                    </div>
+                    <div>
+                        <strong>Forma de pagamento</strong>
+                        <p>Cartão de crédito</p>
+                        <p>Master Card **** **** **** 1234</p>
+                        <p>Titular: João da Silva</p>
+                    </div>
+                    <div>
+                        <strong>Frete</strong>
+                        <p>R$ 15,52</p>
+                        <p>Enviado por <strong>GFL</strong></p>
+                        <p>Entregue</p>
+                    </div>
+                </div>
+            </details>
+            <hr>
         </section>
         <section id="avaliar-produto">
             Deu certo teste
