@@ -69,7 +69,15 @@
                 </div>
                 <div class="section section--column">
                     <p>Acompanhamento</p>
-                    <button type="button">Rastreio detalhado</button>
+                    <button type="button" onclick="dialog.showModal()">Rastreio detalhado</button>
+                    <dialog id="dialog">
+                        <p><strong>Rastreio detalhado</strong></p>
+                        <p>Seu pedido foi entregue com sucesso!</p>
+                        <p>Entregue por: GFL</p>
+                        <p>Código de rastreio: 123456789</p>
+                        <p>Entregue em: 12/12/2020</p>
+                        <button type="button" onclick="dialog.close()">Fechar</button>
+                    </dialog>
                 </div>
             </div>
             <div class="section section--row section--space border margin--bottom">
