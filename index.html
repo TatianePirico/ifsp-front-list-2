@@ -83,7 +83,7 @@
                 </div>
                 <p>R$ 99,00</p>
             </div>
-            <details open>
+            <details>
                 <summary>Detalhes do pagamento e envio</summary>
                 <div class="section section--row section--space">
                     <div>
@@ -109,7 +109,80 @@
             <hr>
         </section>
         <section id="avaliar-produto">
-            Deu certo teste
+            <h2>Avaliação do produto</h2>
+            <form action="#"> 
+                <fieldset class="section section--column margin--bottom">
+                    <legend>Opinião sobre esse produto</legend>
+                    <label for="cor"><strong>Qual cor do produto mais te agrada?</strong></label>
+                    <input type="color" id="cor" value="#302727" list="cores-produto" />
+                    <datalist id="cores-produto">
+                        <option>#302727</option>
+                        <option>#ba2d2d</option>
+                        <option>#f2511b</option>
+                        <option>#f2861b</option>
+                        <option>#c7c730</option>
+                    </datalist>
+                    <br/>
+                    <label for="qualidade"><strong>O produto é de qualidade?</strong></label>
+                    <div class="section section--row">
+                        <input type="radio" name="qualidade" id="concordo-totalmente">
+                        <label for="concordo-totalmente">Concordo Totalmente</label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="radio" name="qualidade" id="concordo">
+                        <label for="concordo">Concordo</label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="radio" name="qualidade" id="nao-estou-decidido">
+                        <label for="nao-estou-decidido">Não estou decidido</label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="radio" name="qualidade" id="discordo">
+                        <label for="discordo">Discordo</label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="radio" name="qualidade" id="discordo-totalmente">
+                        <label for="discordo-totalmente">Discordo Totalmente</label>
+                    </div>
+                    <br/>
+                    <label for="parametros"><strong>Para você, quais parâmetros são mais importantes na qualidade do produto?</strong></label>
+                    <div class="section section--row">
+                        <input type="checkbox" name="durabilidade" id="durabilidade">
+                        <label for="durabilidade">Durabilidade</label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="checkbox" name="features" id="features">
+                        <label for="features">Caracteristicas acessórias ou Features </label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="checkbox" name="confiabiliade" id="confiabiliade">
+                        <label for="confiabiliade">Confiabiliade</label>
+                    </div>
+                    <div class="section section--row">
+                        <input type="checkbox" name="aparencia" id="aparencia">
+                        <label for="aparencia">Aparência</label>
+                    </div>
+                    <br/>
+                    <label for="descricao"><strong>Descreva a caracteristicas que mais chamou sua atenção no produto</strong></label>
+                    <input type="text" name="descricao" id="descricao" list="caracteristicas-produto">
+                    <datalist id="caracteristicas-produto">
+                        <option>Cor</option>
+                        <option>Tamanho</option>
+                        <option>Peso</option>
+                        <option>Material</option>
+                    </datalist>
+                </fieldset>
+                <fieldset class="section section--column margin--bottom">
+                    <legend>Condições atuais</legend>
+                    <label for="arquivo"><strong>Adicione uma foto atual do produto</strong></label>
+                    <input class="margin--bottom" type="file" name="arquivo" id="arquivo">
+                    <label for="data"><strong>Data da compra</strong></label>
+                    <input class="margin--bottom" type="date" name="data" id="data">
+                    <label for="comentario"><strong>Deixe um comentário sobre as condições do produto</strong></label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                </fieldset>
+                <button type="submit">Eviar avaliação</button>
+            </form>
         </section>
     </main>
 </body>

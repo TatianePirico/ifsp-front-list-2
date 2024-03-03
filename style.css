@@ -27,3 +27,7 @@
 	border: 1px solid black;
 	padding: 20px;
 }
+
+input{
+	max-width: 300px;
+}
