@@ -28,6 +28,54 @@
 	padding: 20px;
 }
 
-input{
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"]{
 	max-width: 300px;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.pointer {
+	cursor: pointer;
+	text-decoration: underline;
+	color:#0000EE;
+}
+
+strong {
+	font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+	background-color: #f6f6f6;
+	padding: 15px 10px;
+	border-top: 2px solid #000;
+	font-size: 20px;
+}
+
+button, input::file-selector-button {
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	max-width: 100%;
+	min-width: auto;
+	padding: 8px 25px;
+	background-color: #fff;
+	border: 2px solid #2ea44f;
+	color: #2ea44f;
 }
