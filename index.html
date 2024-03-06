@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/basket.ico">
     <title>Página de Compras</title>
 </head>
 <body class="container">
     <header>
         <nav>
-            <h1>Meus pedidos</h1>
+            <h1>MEUS PEDIDOS</h1>
             <ul>
                 <li>
                     <a href="#meus-dados">Meus dados</a>
@@ -30,20 +35,20 @@
                 <fieldset class="section section--column margin--bottom">
                     <legend>Dados da conta</legend>
                     <label for="email">Email</label>
-                    <input class="margin--bottom" placeholder="Ex: seuemail@gmail.com" type="email" name="email" required/>
+                    <input class="margin--bottom" id="email" placeholder="Ex: seuemail@gmail.com" type="email" name="email" required/>
                     <div class="margin--bottom">
                         <input type="checkbox" name="promotional-email"/> 
                         <label for="promotional-email">Quero receber e-mails promocionais</label>
                     </div>
                     <label for="password">Senha</label>
-                    <input class="margin--bottom" placeholder="Use uma senha forte" type="password" required/>
+                    <input id="password" class="margin--bottom" placeholder="Use uma senha forte" type="password" required/>
                 </fieldset>
                 <fieldset  class="section section--column margin--bottom">
                     <legend>Dados pessoais</legend>
                     <label for="name" required>Nome completo</label>
-                    <input class="margin--bottom" placeholder="Ex: João da Silva" type="name" name="name"/>
+                    <input id="name" class="margin--bottom" placeholder="Ex: João da Silva" type="text" name="name"/>
                     <label for="nickname">Como gostaria que a gente te chamasse? (opcional)</label>
-                    <input class="margin--bottom" placeholder="Joãozinho" type="nickname" name="nickname"/>
+                    <input id="nickname" class="margin--bottom" placeholder="Joãozinho" type="text" name="nickname"/>
                 </fieldset>
                 <button type="submit">Salvar Alterações</button>
             </form>
@@ -92,7 +97,7 @@
                 <p>R$ 99,00</p>
             </div>
             <details>
-                <summary>Detalhes do pagamento e envio</summary>
+                <summary class="pointer">Detalhes do pagamento e envio</summary>
                 <div class="section section--row section--space">
                     <div>
                         <strong>Endereço de entrega</strong>
